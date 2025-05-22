@@ -30,7 +30,7 @@
     cursor: pointer;
 }
 
-h2 {
+.footer-content-right h2, .footer-content-center h2 {
     color: white;
 }
 
