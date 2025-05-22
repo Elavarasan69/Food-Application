@@ -60,7 +60,11 @@ const Cart = () => {
               <b>Rs.{getTotalCartAmount()+25}</b>
             </div>
           </div>
-          <button  onClick={()=>navigate('/placeorder')}>PROCEED TO CHECKOUT</button>
+          {getTotalCartAmount() === 0
+          ?<button className="button-disabled">PROCEED TO CHECKOUT</button>
+          :<button className="button-enabled" onClick={()=>navigate('/placeorder')}>PROCEED TO CHECKOUT</button>
+          }
+          
         </div>
         <div className="cart-promocode">
           <div>

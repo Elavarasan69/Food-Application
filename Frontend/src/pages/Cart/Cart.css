@@ -63,6 +63,16 @@
     cursor: pointer;
 }
 
+.cart-total .button-disabled {
+    border: none;
+    color: grey;
+    background-color: #eaeaea;
+    width: max(15vw,200px);
+    padding: 12px 0px;
+    border-radius: 4px;
+    cursor:not-allowed;
+}
+
 .cart-promocode-input {
     margin-top: 10px;
     display: flex;
