@@ -31,7 +31,7 @@ const placeOrder = async (req,res) => {
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price
+                unit_amount:item.price*100 //convert to paise
             },
             quantity:item.quantity
         }))
@@ -42,7 +42,7 @@ const placeOrder = async (req,res) => {
                 product_data:{
                     name:"Delivery Charges"
                 },
-                unit_amount:25
+                unit_amount:2500 //convert to paise
             },
             quantity:1
         })
@@ -59,7 +59,7 @@ const placeOrder = async (req,res) => {
 
     } catch (error) {
         console.log(error)
-        res.json({success:false,message:"Error"})
+        res.json({success:false,message:error})
     }
 }
 

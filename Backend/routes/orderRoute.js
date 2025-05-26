@@ -4,6 +4,6 @@ import { placeOrder } from '../controllers/orderController.js'
 
 const orderRouter = express.Router()
 
-orderRouter.post('/placer',authMiddleware,placeOrder)
+orderRouter.post('/place',authMiddleware,placeOrder)
 
 export default orderRouter
