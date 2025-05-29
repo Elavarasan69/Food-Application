@@ -20,7 +20,7 @@ const App = () => {
       <div className="app-content">
         <Sidebar/>
         <Routes>
-          <Route path='/add' element={<Add url={BASE_URL}/>}/>
+          <Route path='/' element={<Add url={BASE_URL}/>}/>
           <Route path='/list' element={<List url={BASE_URL}/>}/>
           <Route path='/orders' element={<Orders url={BASE_URL}/>}/>
         </Routes>
